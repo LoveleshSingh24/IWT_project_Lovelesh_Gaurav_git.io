@@ -1,0 +1,47 @@
+/* Add a transition effect to the Login button on hover */
+button{
+    margin-top: 15px;
+    margin-left: 30px;
+    border: none;
+}
+button a {
+    background-color: #0074d9; /* Change the background color to your desired color */
+    color: #fff; /* Change the text color to white or any other color */
+    padding: 10px 20px; /* Adjust the padding to your preferred size */
+    border: none; /* Remove the button border if desired */
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline from the anchor text */
+    font-weight: bold; /* Make the text bold if desired */
+    transition: background-color 0.3s, transform 0.3s; /* Add a smooth transition effect */
+}
+
+/* Add hover effect to the button */
+button a:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+    transform: scale(1.1); /* Add a scaling effect on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Apply the transition to the hover effect as well */
+}
+
+/* Add a pulsating animation to the Login button */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button a {
+    animation: pulsate 2s infinite; /* Apply the pulsating animation */
+}
+
+
+
+/* icon */
+.icon{
+    margin-left:20px;
+}
